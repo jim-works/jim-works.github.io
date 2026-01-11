@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Blog - Wisphaven</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Wisphaven Blog"
+            href="feed.xml"
+        />
     </head>
     <body class="blog-page">
         <nav class="sticky-header">
@@ -12,6 +18,7 @@
                 <a href="index.html">Home</a>
                 <a href="blog.html">Blog</a>
                 <a href="about.html">About</a>
+                <a href="feed.xml" class="rss-link">RSS</a>
             </nav>
         </nav>
 
@@ -22,19 +29,24 @@
 
             <ul class="post-list">
                 <!-- POSTS_START -->
-                <li class="post-item">
-                    <p class="post-date">Jan 11, 2026</p>
-                    <h2 class="post-title">
-                        <a href="blog/test-post.html">Test Post</a>
-                    </h2>
-                    <p class="post-summary">
-                        Post summary goes here. This first paragraph will be
-                        used as the summary on the blog listing.
-                    </p>
-                </li>
                 <!-- Blog posts will be added here by the generator -->
                 <!-- POSTS_END -->
             </ul>
+
+            <p
+                style="
+                    text-align: center;
+                    color: var(--text-secondary);
+                    padding: 2rem 0;
+                "
+            >
+                No posts yet. Check back soon!
+            </p>
+
+            <div class="subscribe-box">
+                <p>Subscribe to get new posts</p>
+                <a href="feed.xml">RSS Feed</a>
+            </div>
         </main>
     </body>
 </html>
