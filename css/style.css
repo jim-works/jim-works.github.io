@@ -1,0 +1,354 @@
+/* Wisphaven Website Styles */
+
+/* Color Palette */
+:root {
+    --paper-bg: #f5f0e1;
+    --header-bg: #ebe4d1;
+    --divider-color: #d4c9a8;
+    --text-primary: #2c2416;
+    --text-secondary: #5c4d3a;
+    --link-color: #6b4423;
+    --link-hover: #8b5a2b;
+}
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--paper-bg);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Site Title (large, at top of home page) */
+.site-title {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    border-bottom: 2px solid var(--divider-color);
+}
+
+.site-title h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--header-bg);
+    border-bottom: 2px solid var(--divider-color);
+    padding: 0.75rem 1rem;
+}
+
+.sticky-header nav {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sticky-header nav a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Main Content Container */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+}
+
+/* Sections (newspaper style) */
+.section {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-image {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--divider-color);
+}
+
+.section-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: var(--divider-color);
+    border: 1px solid var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.section-content {
+    flex: 1;
+}
+
+.section-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--divider-color);
+    padding-bottom: 0.5rem;
+}
+
+.section-content p {
+    margin-bottom: 1rem;
+}
+
+/* Blog Page - Fixed Background */
+body.blog-page {
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body.blog-page .sticky-header {
+    background-color: rgba(235, 228, 209, 0.95);
+}
+
+/* Paper Content (scrolls over fixed background) */
+.paper-content {
+    background-color: var(--paper-bg);
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    min-height: calc(100vh - 6rem);
+}
+
+/* Blog Post List */
+.post-list {
+    list-style: none;
+}
+
+.post-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-title a {
+    color: var(--text-primary);
+}
+
+.post-title a:hover {
+    color: var(--link-color);
+}
+
+.post-summary {
+    color: var(--text-secondary);
+}
+
+/* Individual Blog Post */
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--divider-color);
+}
+
+.post-header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+.post-content p {
+    margin-bottom: 1.25rem;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 1px solid var(--divider-color);
+    padding-bottom: 0.5rem;
+}
+
+.post-content h3 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.post-content ul, .post-content ol {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border: 1px solid var(--divider-color);
+}
+
+.post-content blockquote {
+    border-left: 3px solid var(--divider-color);
+    margin: 1rem 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* About Page */
+.about-content {
+    padding: 2rem 0;
+}
+
+.about-content p {
+    margin-bottom: 1.25rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--divider-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .site-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .sticky-header nav {
+        gap: 1.5rem;
+    }
+
+    .sticky-header nav a {
+        font-size: 1rem;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        padding: 0 1rem;
+    }
+
+    .paper-content {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title h1 {
+        font-size: 2rem;
+    }
+
+    .sticky-header nav {
+        gap: 1rem;
+    }
+
+    .sticky-header nav a {
+        font-size: 0.9rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
