@@ -6,5 +6,13 @@
         <description>Thoughts, updates, and behind-the-scenes from Wisphaven</description>
         <language>en-us</language>
         <lastBuildDate>Jan 11, 2026</lastBuildDate>
+        <item>
+            <title>Why I&#x27;m starting a blog</title>
+            <link>https://wisphaven.com/blog/why-im-starting-a-blog.html</link>
+            <description>Thoughful writing and sharing more with the world will
+                        help me grow.</description>
+            <pubDate>Jan 11, 2026</pubDate>
+            <guid>https://wisphaven.com/blog/why-im-starting-a-blog.html</guid>
+        </item>
     </channel>
 </rss>
