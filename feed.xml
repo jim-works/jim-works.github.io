@@ -3,16 +3,16 @@
     <channel>
         <title>Wisphaven Blog</title>
         <link>https://wisphaven.com/blog.html</link>
-        <description>Thoughts, updates, and behind-the-scenes from Wisphaven</description>
+        <description>Random thoughts and updates for I'm working on.</description>
         <language>en-us</language>
-        <lastBuildDate>Jan 11, 2026</lastBuildDate>
+        <lastBuildDate>Sat, 14 Feb 2026 18:00 EST</lastBuildDate>
+        <pubDate>Sat, 14 Feb 2026 18:00 EST</pubDate>
         <item>
-            <title>Why I&#x27;m starting a blog</title>
-            <link>https://wisphaven.com/blog/why-im-starting-a-blog.html</link>
-            <description>Thoughful writing and sharing more with the world will
-                        help me grow.</description>
-            <pubDate>Jan 11, 2026</pubDate>
-            <guid>https://wisphaven.com/blog/why-im-starting-a-blog.html</guid>
+            <title>What game development means to me</title>
+            <link>https://www.wisphaven.com/blog/what-game-development-means-to-me.html</link>
+            <description>Creative vs corporate life. And a lot of complaining.</description>
+            <pubDate>Sat, 14 Feb 2026 18:00 EST</pubDate>
+            <guid>https://www.wisphaven.com/blog/what-game-development-means-to-me.html</guid>
         </item>
     </channel>
 </rss>
